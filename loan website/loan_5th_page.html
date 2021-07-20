@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>fifth page</title>
+</head>
+<style>
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: green;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+button{
+      border: none;
+      color: green;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      transition-duration: 0.4s;
+      position: absolute;
+      top: 100%;
+      left: 40%
+    }
+    button:hover{
+      background-color: green;
+      color: white;
+    }
+    .p1{
+      position: absolute;
+      top: 1px;
+      right: 1px;
+      padding: 1px;
+    }
+    header{
+           position: absolute;
+           top: 1px;
+           right: 1px;
+            background-color:black;
+            width: 1350px;
+            height: 32px;
+            padding: 10px;  
+            color: white;       
+            }
+            footer{
+      position: absolute;
+      top: 92%;
+      left: 40%;
+    }
+    .align{
+      position: absolute;
+      top: 50px;
+      left: 490px;
+    }
+</style>              
+<body>
+  <header>
+  <img src="C:\Users\Baburaj TP\Desktop\Sublime Text 3 (3211)\loan website\loanlogo5.png"height="36px">
+  <p class="p1"><img src="C:\Users\Baburaj TP\Desktop\Sublime Text 3 (3211)\loan website\contact_us_logo.png">Contact Us : +91 1593574562</p>
+</header>
+<div class="align">
+<h1 style="text-transform:uppercase;font-family:"sans-serif";
+font-weight:normal;"><center>Co-Borrower</center></h1>
+
+<h2><center>Are you applying with a Co-Borrower?</center></h2>
+<center><label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+</center>
+
+<h3><center>Name of the Co-Borrower</h3>
+<center><div class="slidecontainer">
+  <input type="name" placeholder="Name">
+</div>
+</center>
+<h3><center>Age of the Co-Borrower</h3>
+<center>
+<input type="number" placeholder="Age" required min="18" max="90">
+</center>
+<h3><center>Annual income of the Co-Borrower</h3>
+<center>
+<input type="number" placeholder="Annual income in lakhs" required min="100" max="100000000"><br><br>
+</center>
+<br>
+<a href="loan_6th_page.html"><button>continue</button></a>
+</div>
+</body>
+<footer><p>&copy;2021 All Rights Reserved, Aadni Global, Ltd.</p></footer>
+</html>

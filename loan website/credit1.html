@@ -1,0 +1,101 @@
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<center><h2>Credit Score Determination</h2> </center>
+<script>
+function openwindow()
+{
+var newwindow= window.open('', '', 'width=10000, height=1000');
+newwindow.document.write("<button onclick='window.close()'>"please visit again"</button>");
+newwindow.document.write("please visit again");
+}
+</script>
+<form method=post action="verify.html">
+    <center><p>Calculate your credit score</p></center> 
+<br/>
+<center><label>Select your age</label>
+<select name="Enter your choice">
+<option>Enter your choice</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<option>Other</option>
+</select>
+</center>
+<br/>
+<center><label>Annual Income</label>
+<input type="text" id="creditscore" name="Enter your Annual Income"/></p>
+<br/>
+<center><input type="button" id="creditcalc" value="Calculate Score"></center>
+<input type="submit" value="process">
+</form>
+<br/>
+<center><p id="output">I will let you know if your credit 
+score qualifies you after you enter a number and click the 
+ button!</p></center>
+ <script>
+$(document).ready(function() {
+
+   $("#creditcalc").click( function() {
+        alert ("Processing Your input")
+       var input = $("#creditscore").val();
+       if (isNaN(parseInt(input)))
+            $("#output").html ("Please enter a valid              number!")
+
+           /* else if (parseFloat (input) > 1200000 || parseFloat 
+            (input) < 300000) 
+            $("#output").html ("Please enter a Annual Income "+
+            "score between 3L and 12L!")*/
+            else if (parseFloat (input) >= 1050000 && parseFloat 
+            (input) <= 1200000)
+            $("#output").html ("Your credit score is 800 "+
+            " with your Annual Income of " + 
+            (input))
+
+            else if (parseFloat (input) >=950000 && parseFloat 
+            (input) <= 1049999)
+           
+            $("#output").html ("Your credit score is 777 "+
+            " with your Annual Income of " + 
+            (input))
+
+            else if (parseFloat (input) >= 750000 && parseFloat 
+            (input) <= 949999)
+           
+            $("#output").html ("Your credit score is 718 "+
+            " with your Annual Income of " + 
+            (input))
+
+            else if (parseFloat (input) >= 650000 && parseFloat 
+            (input) <= 749999)
+           
+            $("#output").html ("Your credit score is 632 "+
+            " with your Annual Income of " + 
+            (input))
+
+            else if (parseFloat (input) >= 450000 && parseFloat 
+            (input) <= 649999)
+            
+            $("#output").html ("Your credit score is 618 "+
+            " with your Annual Income of " + 
+            (input))
+
+            else if (parseFloat (input) >= 300000 && parseFloat 
+            (input) <= 449999)
+            
+            $("#output").html ("Your credit score is 600 "+
+            " with your Annual Income of " + 
+            (input))
+
+          else {
+               openwindow();
+         /*   $("#output").html ("You are denied. We cannot "+
+            "loan you the money with your low Annual Income of "     + (input) + " at this time")
+*/
+}
+   });      
+});
+
+</script>
+</html>

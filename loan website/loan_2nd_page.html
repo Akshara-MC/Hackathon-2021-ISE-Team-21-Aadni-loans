@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+  <title>LOAN APPLICATION</title>
+  <style>
+    header{
+           position: absolute;
+           top: 1px;
+           right: 1px;
+            background-color:black;
+            width: 1350px;
+            height: 32px;
+            padding: 10px;  
+            color: white;       
+            }
+    div{
+      position: absolute;
+      top: 45px;
+      left: 400px;
+    }
+    label{
+      color:#1BBA93;
+  font-size: 17px;
+  font-weight: bold;
+    }
+    .p1{
+      position: absolute;
+      top: 1px;
+      right: 1px;
+      padding: 1px;
+    }
+    button{
+      border: none;
+      color: green;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      transition-duration: 0.4s;
+      position: absolute;
+      top: 100%;
+      left: 45%
+    }
+    button:hover{
+      background-color: green;
+      color: white;
+    }
+    footer{
+      position: absolute;
+      top: 92%;
+      left: 40%;
+    }
+    
+  </style>
+</head>
+<script>
+      var date = new Date();
+      var year = date.getFullYear();
+       var month = date.getFullMonth();
+        var date = date.getFullDate();
+      document.write(date,month,year);
+</script>
+<body> 
+<header>
+  <img src="C:\Users\Baburaj TP\Desktop\Sublime Text 3 (3211)\loan website\loanlogo5.png"height="36px">
+  <p class="p1"><img src="C:\Users\Baburaj TP\Desktop\Sublime Text 3 (3211)\loan website\contact_us_logo.png">Contact Us : +91 1593574562</p>
+</header> 
+<div>
+<center><b><h1>Loan Application</h1></b></center>
+<center>
+<form method="post" action="loan_3rd_page.html">
+     <label>First Name</label>
+   <input type = "text"  placeholder = "Fname" pattern = "[a-z]*[A-Z]{1}*" name="Fname" >&nbsp;&nbsp;&nbsp;&nbsp;
+   <label>Last Name</label>
+   <input type = "text" placeholder = "Lname" pattern = "[a-z]*" name="Lname"></br>
+   </br>
+ </br>
+    <label>Gender</label>
+       <input type="radio" name = "where" value="1">Female
+         <input type="radio" name = "where" value="1">Male
+                <input type="radio" name = "where" value="1">Transgender</br></br>
+                   </br>
+                    <label>Birthdate:   </label>
+                       <input type ="date" value = "yyyy-mm-dd"></br></br>
+                          </br>
+                           <label for="phone">Phone Number:</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="phoneno" pattern="[0-9]{10}" required><br><br>
+                                  </br>
+                                  <label for="email">Enter your email:</label>
+                               <input type="email" id="email" name="email">
+  </br></br></br>
+  <a href="loan_3rd_page.html"><button>Submit</button></a>
+  </form>
+  </center>
+</div>
+</body>
+<footer><p>&copy;2021 All Rights Reserved, Aadni Global, Ltd.</p></footer>
+</html>
